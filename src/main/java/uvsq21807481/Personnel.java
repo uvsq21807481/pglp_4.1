@@ -1,5 +1,6 @@
 package uvsq21807481;
 
+import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -8,20 +9,20 @@ public final class Personnel {
     private final String lastName;
     private final String firstName;
     private final String job;
-    private final String birth;
+    private final LocalDate birth;
     private final List<String> phone;
 
     public static class Builder{
         private final String lastName;
         private final String firstName;
         private final String job;
-        private final String birth;
+        private final LocalDate birth;
         private final List<String> phone;
 
-        public Builder(String lastName, String firstName, String job, String birth){
+        public Builder(String lastName, String firstName, String job){
             this.lastName = lastName;
             this.firstName = firstName;
-            this.birth = birth;
+            this.birth = LocalDate.now();
             this.job = job;
             this.phone = new ArrayList<>();
         }
