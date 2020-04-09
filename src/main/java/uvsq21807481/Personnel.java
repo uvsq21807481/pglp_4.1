@@ -4,7 +4,7 @@ import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.List;
 
-public final class Personnel {
+public final class Personnel extends Equipe{
 
     private final String lastName;
     private final String firstName;
